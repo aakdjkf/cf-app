@@ -1,0 +1,11 @@
+---
+applications:
+- name: myapp
+  routes:
+    - route: python-i575904.cfapps.us10.hana.ondemand.com
+  path: ./
+  memory: 128M
+  buildpack: python_buildpack
+  command: python server.py
+  services:
+    - pyhaha
