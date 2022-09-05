@@ -28,7 +28,7 @@ def hello():
         cursor.close()
         conn.close()
 
-        return "Current time is: " + str(ro["CURRENT_UTCTIMESTAMP"])
+        return "[myapp]Current time is: " + str(ro["CURRENT_UTCTIMESTAMP"])
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port)
